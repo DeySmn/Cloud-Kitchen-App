@@ -1,0 +1,62 @@
+{
+  "user": [
+    {
+      "id": "#C1",
+      "email": "deysumon99@gmail.com",
+      "name": "Sumon Dey",
+      "phoneNo": "(+91)7980581501",
+      "password": "1234!asdf",
+      "address": ["118, Bandhab Nagar, Kolkata-700028, West Bengal"],
+      "gender": "M",
+      "img_url": "",
+      "cart": []
+    }
+  ],
+  "order": [],
+  "coupon": [
+    {
+      "couponCode": "POL1023",
+      "discountRate": 10,
+      "minimumAmount": 500
+    }
+  ],
+  "productservice": {
+    "product": [
+      {
+        "pid": "#1",
+        "name": "Boba Tea",
+        "desc": "Amazingly fresh and squisly flavorable choco chips are added in it",
+        "price": 200,
+        "quantity": 1,
+        "img_url": "",
+        "type": "SPECIAL_DISH",
+        "catagory": "VEG",
+        "live": true
+      }
+    ],
+    "review": []
+  },
+  "FeedBackService": {
+    "feedback": []
+  },
+  "RestaurantService": {
+    "restaurantTeam": [
+      {
+        "userId": "#E1",
+        "role": "CHEF",
+        "email": "vinayaksaraf1999@gmail.com",
+        "name": "Vinayak Saraf",
+        "phoneNo": "(+91)9830801454",
+        "password": "*****",
+        "address": ["add1", "add2"],
+        "gender": "M",
+        "img_url": "/../",
+        "monthlySalary": 35000
+      }
+    ]
+  },
+  "PaymentService": {
+    "Refund": [],
+    "payment": []
+  }
+}

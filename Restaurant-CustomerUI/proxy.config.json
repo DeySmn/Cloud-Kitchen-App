@@ -1,0 +1,9 @@
+{
+  "/restaurantApp/*": {
+    "target": "https://restaurant-app.up.railway.app",
+    "secure": false,
+    "pathRewrite": { "^/restaurantApp": "" },
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

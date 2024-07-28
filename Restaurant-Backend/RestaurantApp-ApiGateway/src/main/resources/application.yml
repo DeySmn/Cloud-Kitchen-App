@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: ApiGateway
+  cloud:
+    gateway:
+      routes:
+      - id: FeedbackService
+        uri: https://ra-fs-prod.up.railway.app
+        predicates:
+        - Path=/api/v1/feedbackservice/**
+      - id: MessagingService
+        uri: https://ra-ms-prod.up.railway.app
+        predicates:
+        - Path=/api/v1/messagingservice/**
+      - id: ProductService
+        uri: https://ra-ps-prod.up.railway.app
+        predicates:
+        - Path=/api/v1/productservice/**
+      - id: UserService
+        uri: https://ra-us-prod.up.railway.app
+        predicates:
+        - Path=/api/v1/userservice/**
+      - id: AuthenticationService
+        uri: https://ra-as-prod.up.railway.app
+        predicates:
+        - Path=/api/v1/authservice/**
+#  sleuth:
+#    sampler:
+#      probability: 1.0 #Spring-Boot-2
+  config:
+    import: configserver:https://ra-cs-prod.up.railway.app/
+  profiles:
+    active: default     
+ 
+management:
+  security:
+    enabled: false

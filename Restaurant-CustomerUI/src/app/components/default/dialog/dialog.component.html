@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>{{ dialogData.title }}</h2>
+<mat-dialog-content> {{ dialogData.message }} </mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="btn btn-warning" mat-button [mat-dialog-close]="true">
+    {{ dialogData.buttonText.ok }}
+  </button>
+  <button
+    class="btn btn-warning"
+    mat-button
+    [mat-dialog-close]="false"
+    cdkFocusInitial
+  >
+    {{ dialogData.buttonText.cancel }}
+  </button>
+</mat-dialog-actions>
